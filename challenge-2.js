@@ -2,9 +2,9 @@ const add = (a, b) => a + b;
 const multiply = (a, b, c) => a * (b * c);
 
 function internal() {
-    const added = add(this.internal.a, this.internal.b);
+    const added = add(this.internal.a, this.internal.b, this.internal.c);
     const multiplied = multiply(this.internal.a, this.internal.b, this.internal.c);
-    console.log((added * multiplied), multiplied);
+    console.log(multiplied * added, multiplied);
 }
 
 // Not allowed to change below this
